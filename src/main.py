@@ -32,7 +32,7 @@ async def cmd_start(message: Message):
     )
 
 
-@dp.message(lambda message: message.text == "Я красная кнопка")
+@dp.message(lambda message: message.text == "Красная кнопка")
 async def reply_contacts(message: Message):
     await message.answer("Мои социальыне сети:", reply_markup=get_inline_keyboard())
 
