@@ -22,7 +22,7 @@ def get_reply_keyboard():
             ],
             [
                 KeyboardButton(
-                    text="Зеленая кнопка",
+                    text="Зарандомить ник",
                     style="success",
                     icon_custom_emoji_id="5388977792224342481",
                 )

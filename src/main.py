@@ -6,6 +6,7 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from aiogram.types import Message
 from dotenv import load_dotenv
+from random_nick_generator import generate
 
 from keyboards import get_inline_keyboard, get_reply_keyboard
 
@@ -50,6 +51,11 @@ async def cmd_start(message: Message):
 @dp.message(lambda message: message.text == "Красная кнопка")
 async def reply_contacts(message: Message):
     await message.answer("Мои социальыне сети:", reply_markup=get_inline_keyboard())
+
+
+@dp.message(lambda message: message.text == "Зарандомить ник")
+async def reply_contacts(message: Message):
+    await message.answer(f"Твой новый ник:\n{generate()}")
 
 
 # Обработчик всех остальных сообщений
