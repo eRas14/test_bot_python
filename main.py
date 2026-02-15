@@ -35,9 +35,9 @@ def get_reply_keyboard():
 def get_inline_keyboard():
     keyboard = InlineKeyboardMarkup(
         inline_keyboard=[
-            [InlineKeyboardButton(text="Youtube", url="https://example.com", style="danger", icon_custom_emoji_id="5411222239599168125")],
-            [InlineKeyboardButton(text="Telegram канал", url="https://t.me/example", style="primary", icon_custom_emoji_id="5884356309372900807")],
-            [InlineKeyboardButton(text="Вацап", callback_data="help", style="success", icon_custom_emoji_id="5388888315170665675")]
+            [InlineKeyboardButton(text="Мой Youtube кана", url="https://t.me/erasj", style="danger", icon_custom_emoji_id="5411222239599168125")],
+            [InlineKeyboardButton(text="Это тоже я", url="https://t.me/erasj", style="primary", icon_custom_emoji_id="5884356309372900807")],
+            [InlineKeyboardButton(text="Вацап", url="https://t.me/erasj", style="success", icon_custom_emoji_id="5388888315170665675")]
         ]
     )
     return keyboard
