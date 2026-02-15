@@ -25,6 +25,21 @@ dp = Dispatcher()
 # Обработчик команды /start
 @dp.message(Command("start"))
 async def cmd_start(message: Message):
+
+    user = message.from_user
+
+    # Формируем информацию о пользователе
+    user_info = (
+        f"🆕 **Новый пользователь запустил бота!**\n"
+        f"┌ 👤 **Имя:** {user.full_name}\n"
+        f"├ 🆔 **ID:** `{user.id}`\n"
+        f"├ 🌍 **Язык:** {user.language_code or 'не указан'}\n"
+        f"└ 🔗 **Юзернейм:** @{user.username}"
+    )
+
+    # Отправляем в группу
+    await bot.send_message(os.getenv("CHAT_ID"), user_info, parse_mode="Markdown")
+
     await message.answer(
         f"👋 Привет, {message.from_user.first_name}!\n"
         f"Я простой бот с кнопками для теста:",
