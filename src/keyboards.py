@@ -8,21 +8,21 @@ def get_reply_keyboard():
         keyboard=[
             [
                 KeyboardButton(
-                    text="Я красная кнопка",
+                    text="Красная кнопка",
                     style="danger",
                     icon_custom_emoji_id="5875323095501247167",
                 )
             ],
             [
                 KeyboardButton(
-                    text="Я синия кнопка",
+                    text="Синия кнопка",
                     style="primary",
                     icon_custom_emoji_id="5197247368344379154",
                 )
             ],
             [
                 KeyboardButton(
-                    text="Я зеленая кнопка",
+                    text="Зеленая кнопка",
                     style="success",
                     icon_custom_emoji_id="5388977792224342481",
                 )
