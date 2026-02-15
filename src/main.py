@@ -7,7 +7,7 @@ from aiogram.filters import Command
 from aiogram.types import Message
 from dotenv import load_dotenv
 
-from bot_for_test_python.src.keyboards import get_inline_keyboard, get_reply_keyboard
+from keyboards import get_inline_keyboard, get_reply_keyboard
 
 load_dotenv()
 

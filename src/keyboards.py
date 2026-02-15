@@ -22,7 +22,7 @@ def get_reply_keyboard():
             ],
             [
                 KeyboardButton(
-                    text="Я зеленая кнопки ",
+                    text="Я зеленая кнопка",
                     style="success",
                     icon_custom_emoji_id="5388977792224342481",
                 )
@@ -55,7 +55,7 @@ def get_inline_keyboard():
             ],
             [
                 InlineKeyboardButton(
-                    text="Вацап",
+                    text="Отправьте мне сердечко",
                     url="https://t.me/erasj",
                     style="success",
                     icon_custom_emoji_id="5388888315170665675",
