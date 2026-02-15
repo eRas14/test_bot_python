@@ -34,13 +34,13 @@ async def cmd_start(message: Message):
 
 @dp.message(lambda message: message.text == "Я красная кнопка")
 async def reply_contacts(message: Message):
-    await message.answer("тут все красное", reply_markup=get_inline_keyboard())
+    await message.answer("Мои социальыне сети:", reply_markup=get_inline_keyboard())
 
 
 # Обработчик всех остальных сообщений
 @dp.message()
 async def echo_message(message: Message):
-    await message.answer("я иничего не умею", reply_markup=get_reply_keyboard())
+    await message.answer("тут ничего нету... ):", reply_markup=get_reply_keyboard())
 
 
 # Функция запуска бота

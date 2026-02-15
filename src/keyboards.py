@@ -39,7 +39,7 @@ def get_inline_keyboard():
         inline_keyboard=[
             [
                 InlineKeyboardButton(
-                    text="Мой Youtube кана",
+                    text="Мой Youtube канал",
                     url="https://t.me/erasj",
                     style="danger",
                     icon_custom_emoji_id="5411222239599168125",
@@ -47,7 +47,7 @@ def get_inline_keyboard():
             ],
             [
                 InlineKeyboardButton(
-                    text="Это тоже я",
+                    text="Мой TG",
                     url="https://t.me/erasj",
                     style="primary",
                     icon_custom_emoji_id="5884356309372900807",
